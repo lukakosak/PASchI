@@ -36,6 +36,7 @@ build/
 
 ### VS Code ###
 .vscode/
+node_modules/
 
 Implementierung/frontend/paschi/node_modules/
 
@@ -44,3 +45,6 @@ Implementierung/frontend/paschi/dist/
 Implementierung/frontend/paschi/coverage/
 
 Implementierung/frontend/paschi/dev-dist/
+
+.env
+docker/keys/

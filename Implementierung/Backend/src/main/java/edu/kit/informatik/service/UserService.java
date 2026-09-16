@@ -107,7 +107,7 @@ public class UserService extends BaseService<User, UserDto, UserDto> {
 
         String newPassword = new BCryptPasswordEncoder().encode(user.getPassword());
 
-        user.setPassword("{bcrypt}" + newPassword);
+        user.setPassword(newPassword);
 
         User newUser = userRepository.save(user);
 

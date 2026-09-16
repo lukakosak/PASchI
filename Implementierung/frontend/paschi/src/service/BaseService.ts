@@ -1,6 +1,6 @@
 import {IModelDtoMapper} from "@/dto/mapper/IModelDtoMapper";
 
-export const BASE_URL = "https://193.196.36.88";
+export const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "";
 
 export abstract class BaseService<Entity, Dto> {
 

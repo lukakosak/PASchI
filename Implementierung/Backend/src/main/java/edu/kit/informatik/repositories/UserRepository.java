@@ -28,4 +28,6 @@ public interface UserRepository extends JpaRepository<User, String> {
      * @return {@link Optional} von {@link User}
      */
     Optional<User> findUserByEmail(String email);
+
+    boolean existsByEmail(String email);
 }

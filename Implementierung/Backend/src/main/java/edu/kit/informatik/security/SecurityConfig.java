@@ -61,9 +61,10 @@ public class SecurityConfig {
      * @return {@link AuthenticationManager}
      */
     @Bean
-    public AuthenticationManager authManager(UserDetailsService userDetailsService) {
+    public AuthenticationManager authManager(UserDetailsService userDetailsService, BCryptPasswordEncoder passwordEncoder) {
         var authProvider = new DaoAuthenticationProvider();
         authProvider.setUserDetailsService(userDetailsService);
+        authProvider.setPasswordEncoder(passwordEncoder);
         return new ProviderManager(authProvider);
     }
 

@@ -112,7 +112,7 @@ export class UserController {
       lastName,
       email,
       password,
-      false,
+      true,
       Role.USER,
       ""
     );

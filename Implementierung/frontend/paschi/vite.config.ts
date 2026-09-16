@@ -56,7 +56,7 @@ export default defineConfig({
           },
           {
             urlPattern: ({ url }) => url.pathname.startsWith("/api/"),
-            handler: "NetworkFirst" as const,
+            handler: "NetworkOnly" as const,
             method: "POST",
             options: {
               backgroundSync: {
@@ -83,7 +83,7 @@ export default defineConfig({
           },
           {
             urlPattern: ({ url }) => url.pathname.startsWith("/api/"),
-            handler: "NetworkFirst" as const,
+            handler: "NetworkOnly" as const,
             method: "PUT",
             options: {
               backgroundSync: {
@@ -109,7 +109,7 @@ export default defineConfig({
           },
           {
             urlPattern: ({ url }) => url.pathname.startsWith("/api/"),
-            handler: "NetworkFirst" as const,
+            handler: "NetworkOnly" as const,
             method: "DELETE",
             options: {
               backgroundSync: {
